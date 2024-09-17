@@ -12,6 +12,25 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      animation: {
+        snow: "snow ease-in-out infinite", // Replace with your desired duration
+      },
+      keyframes: {
+        snow: {
+          "0%": {
+            transform: "translate(0, 0)",
+            opacity: "0",
+          },
+          "50%": {
+            opacity: "1",
+          },
+          "100%": {
+            opacity: "0",
+            transform: "translate(100px, 50vh)",
+          },
+        },
+      },
     },
   },
   plugins: [],
